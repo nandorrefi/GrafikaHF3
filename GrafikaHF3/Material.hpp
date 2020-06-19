@@ -1,5 +1,5 @@
 #pragma once
-#include "Camera.h"
+#include "Camera.hpp"
 
 struct Material {
 	vec3 kd, ks, ka;

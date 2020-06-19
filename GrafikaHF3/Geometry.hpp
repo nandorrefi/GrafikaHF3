@@ -1,5 +1,5 @@
 #pragma once
-#include "RenderState.h"
+#include "RenderState.hpp"
 
 template<class T> struct Dnum {
 	float f;

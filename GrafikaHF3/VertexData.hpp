@@ -1,5 +1,5 @@
 #pragma once
-#include "Texture.h"
+#include "Texture.hpp"
 
 struct VertexData {
 	vec3 position, normal;

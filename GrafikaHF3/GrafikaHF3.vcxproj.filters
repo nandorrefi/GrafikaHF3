@@ -18,7 +18,7 @@
     <ClCompile Include="framework.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Skeleton.cpp">
+    <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -26,49 +26,49 @@
     <ClInclude Include="framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Camera.h">
+    <ClInclude Include="Antibody.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Material.h">
+    <ClInclude Include="Camera.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Light.h">
+    <ClInclude Include="Geometry.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include="Hitable.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RenderState.h">
+    <ClInclude Include="Light.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Shader.h">
+    <ClInclude Include="Material.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PhongShader.h">
+    <ClInclude Include="Object.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="VertexData.h">
+    <ClInclude Include="PhongShader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Geometry.h">
+    <ClInclude Include="RenderState.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Shapes.h">
+    <ClInclude Include="Scene.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Object.h">
+    <ClInclude Include="Shader.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Scene.h">
+    <ClInclude Include="Shapes.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Virus.h">
+    <ClInclude Include="Texture.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Antibody.h">
+    <ClInclude Include="VertexData.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hitable.h">
+    <ClInclude Include="Virus.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

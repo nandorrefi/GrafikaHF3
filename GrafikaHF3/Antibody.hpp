@@ -1,5 +1,5 @@
 #pragma once
-#include "Object.h"
+#include "Object.hpp"
 
 class Antibody : public Object{
 	Tetrahedron* bodyShape;

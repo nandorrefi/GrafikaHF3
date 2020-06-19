@@ -1,5 +1,5 @@
 #pragma once
-#include "Virus.h"
+#include "Virus.hpp"
 
 class Scene {
 	std::vector<Object*> objects;

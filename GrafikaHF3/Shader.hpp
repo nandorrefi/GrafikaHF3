@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Shapes.h"
+#include "Shapes.hpp"
 
 class Shader : public GPUProgram {
 public:

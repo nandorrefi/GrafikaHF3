@@ -139,25 +139,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="framework.cpp" />
-    <ClCompile Include="Skeleton.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Antibody.h" />
-    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Antibody.hpp" />
+    <ClInclude Include="Camera.hpp" />
     <ClInclude Include="framework.h" />
-    <ClInclude Include="Geometry.h" />
-    <ClInclude Include="Hitable.h" />
-    <ClInclude Include="Light.h" />
-    <ClInclude Include="Material.h" />
-    <ClInclude Include="Object.h" />
-    <ClInclude Include="PhongShader.h" />
-    <ClInclude Include="RenderState.h" />
-    <ClInclude Include="Scene.h" />
-    <ClInclude Include="Shader.h" />
-    <ClInclude Include="Shapes.h" />
-    <ClInclude Include="Texture.h" />
-    <ClInclude Include="VertexData.h" />
-    <ClInclude Include="Virus.h" />
+    <ClInclude Include="Geometry.hpp" />
+    <ClInclude Include="Hitable.hpp" />
+    <ClInclude Include="Light.hpp" />
+    <ClInclude Include="Material.hpp" />
+    <ClInclude Include="Object.hpp" />
+    <ClInclude Include="PhongShader.hpp" />
+    <ClInclude Include="RenderState.hpp" />
+    <ClInclude Include="Scene.hpp" />
+    <ClInclude Include="Shader.hpp" />
+    <ClInclude Include="Shapes.hpp" />
+    <ClInclude Include="Texture.hpp" />
+    <ClInclude Include="VertexData.hpp" />
+    <ClInclude Include="Virus.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

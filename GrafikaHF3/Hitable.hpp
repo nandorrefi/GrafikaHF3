@@ -1,5 +1,5 @@
 #pragma once
-#include "PhongShader.h"
+#include "PhongShader.hpp"
 
 class Hitable {
 	virtual float getHitRadius() = 0;

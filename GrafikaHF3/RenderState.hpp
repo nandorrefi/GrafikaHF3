@@ -1,5 +1,5 @@
 #pragma once
-#include "VertexData.h"
+#include "VertexData.hpp"
 
 struct RenderState {
 	mat4 MVP, M, Minv, V, P;

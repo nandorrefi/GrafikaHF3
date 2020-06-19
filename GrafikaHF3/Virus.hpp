@@ -1,5 +1,5 @@
 #pragma once
-#include "Antibody.h"
+#include "Antibody.hpp"
 
 vec4 operator*(const mat4& m, const vec4& v) {
 	vec4 result;
