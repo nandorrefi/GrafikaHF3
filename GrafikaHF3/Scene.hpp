@@ -10,7 +10,7 @@ class Scene {
 
 public:
 	void Build() {
-		camera.wEye = vec3(0, 0, 6);
+		camera.wEye = vec3(0, 0, 2.0);
 		camera.wLookat = vec3(0, 0, 0);
 		camera.wVup = vec3(0, 1, 0);
 
@@ -82,6 +82,8 @@ public:
 
 	void Animate(float tstart, float tend) {
 		float virusAntibodyDistance = length(virus->getOrigin() - antibody->getOrigin());
+		float virusRad = virus->getHitRadius();
+		float antiRad = antibody->getHitRadius();
 		if (virusAntibodyDistance <= virus->getHitRadius() + antibody->getHitRadius())
 			virus->kill();
 

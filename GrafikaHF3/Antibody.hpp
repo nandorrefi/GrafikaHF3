@@ -15,32 +15,39 @@ class Antibody : public Object{
 
 	Likeliness xDir = NO_PREFERENCE, yDir = NO_PREFERENCE, zDir = NO_PREFERENCE;
 
-	float getRandNum(Likeliness l) {
+	int getRandomDirection(int negativePercentage) {
+		if (rand() % 100 < negativePercentage)
+			return -1;
 
-		float val = (float)(rand() % 1000) / 10000;
+		return 1;
+	}
 
-		if (l == POSITIVE) {
-			if (rand() % 100 < 25)
-				val *= -1;
+	int getDirectionByLikeliness(Likeliness l) {
+		int negativePercentage;
 
-			return val;
+		switch (l) {
+		case POSITIVE:
+			negativePercentage = 25;
+			break;
+		case NEGATIVE:
+			negativePercentage = 75;
+			break;
+		default:
+			negativePercentage = 50;
+			break;
 		}
-		else if (l == NEGATIVE) {
-			if (rand() % 100 >= 25)
-				val *= -1;
 
-			return val;
-		}
-		else {
-			if (rand() % 100 >= 50)
-				val *= -1;
+		return getRandomDirection(negativePercentage);
+	}
 
-			return val;
-		}
+	float getRandomVelocity(Likeliness l) {
+		float velocityValue = (float)(rand() % 1000) / 100000;
+		float velocityDirection = 0;
+		return velocityValue * getDirectionByLikeliness(l);
 	}
 
 	vec3 randomVec3(Likeliness x, Likeliness y, Likeliness z) {
-		return vec3(getRandNum(x), getRandNum(y), getRandNum(z));
+		return vec3(getRandomVelocity(x), getRandomVelocity(y), getRandomVelocity(z));
 	}
 
 	void genChildren(Tetrahedron* parent, int levels = 0) {
@@ -112,8 +119,8 @@ public:
 		geometry = bodyShape;
 
 		rotationAxis = vec3(1, 1, 1);
-		translation = vec3(1.75, 0, 0);
-		scale = vec3(0.75, 0.75, 0.75);
+		translation = vec3(0.5, 0, 0);
+		scale = vec3(0.17, 0.17, 0.17);
 
 		genChildren(bodyShape);
 
@@ -129,7 +136,7 @@ public:
 	}
 
 	float getHitRadius() {
-		return length(bodyShape->getSide(0).getPosition(0) - getOrigin());
+		return scale.y;
 	}
 
 	void Draw(RenderState& state, const mat4& parentM = identityMatrix, const mat4& parentMinv = identityMatrix) {

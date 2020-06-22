@@ -30,7 +30,7 @@ class Virus : public Object {
 		vec3 currDir = vec3(0, 0, 1);
 		vec3 normal = normalize(vd.normal);
 
-		vec3 projScale = scale / 10;
+		vec3 projScale = scale / 2.5;
 		vec3 projTranslation = vd.position - normal * length(projScale);
 
 		float angle = acosf(dot(currDir, normal));
@@ -92,10 +92,10 @@ public:
 
 		geometry = bodyShape;
 
-		translation = vec3(-1.75, 0, 0);
+		translation = vec3(-0.75, 0, 0);
 		rotationAngle = M_PI / 2;
 		rotationAxis = vec3(0, 1, 1);
-		scale = vec3(1.25f, 1.25f, 1.25f);
+		scale = vec3(0.35f, 0.35f, 0.35f);
 
 		this->coronaMaterial = coronaMaterial;
 		this->coronaTexture = coronaTexture;
